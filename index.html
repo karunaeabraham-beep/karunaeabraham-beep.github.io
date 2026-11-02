@@ -2,204 +2,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Karuna | Cyber Security Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karuna | Cyber Security Portfolio</title>
 
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
 
-body {
-    font-family: Arial, sans-serif;
-    background: #080d18;
-    color: white;
-    line-height: 1.7;
-}
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b1120;
+            color: white;
+            line-height: 1.6;
+        }
 
-header {
-    padding: 22px 8%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #101a2b;
-    position: sticky;
-    top: 0;
-}
+        header {
+            background: #111c2e;
+            padding: 20px;
+            text-align: center;
+        }
 
-.logo {
-    color: #38d9c5;
-    font-size: 23px;
-    font-weight: bold;
-}
+        header h1 {
+            color: #38bdf8;
+        }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-    font-size: 14px;
-}
+        nav {
+            margin-top: 12px;
+        }
 
-nav a:hover {
-    color: #38d9c5;
-}
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+        }
 
-section {
-    padding: 75px 10%;
-}
+        nav a:hover {
+            color: #38bdf8;
+        }
 
-.hero {
-    min-height: 85vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+        section {
+            padding: 55px 10%;
+        }
 
-.hero h1 {
-    font-size: 48px;
-    margin: 15px 0;
-}
+        .home {
+            text-align: center;
+            padding: 100px 10%;
+        }
 
-.hero h1 span {
-    color: #38d9c5;
-}
+        .home h2 {
+            font-size: 38px;
+            color: #38bdf8;
+        }
 
-.tag {
-    color: #38d9c5;
-    letter-spacing: 3px;
-}
+        .home p {
+            font-size: 19px;
+            margin-top: 15px;
+        }
 
-.hero p, .about p {
-    color: #b8c4d6;
-    max-width: 650px;
-}
+        h2 {
+            color: #38bdf8;
+            margin-bottom: 20px;
+        }
 
-.btn {
-    display: inline-block;
-    background: #38d9c5;
-    color: #080d18;
-    padding: 12px 25px;
-    margin-top: 25px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    width: fit-content;
-}
+        .card {
+            background: #172338;
+            padding: 22px;
+            margin: 15px 0;
+            border-radius: 10px;
+        }
 
-h2 {
-    font-size: 30px;
-    margin-bottom: 25px;
-    color: #38d9c5;
-}
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
 
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
-}
+        .skills span {
+            background: #172338;
+            padding: 12px 18px;
+            border-radius: 8px;
+        }
 
-.card {
-    background: #121e32;
-    padding: 25px;
-    border: 1px solid #24364d;
-    border-radius: 10px;
-}
+        a {
+            color: #38bdf8;
+        }
 
-.card h3 {
-    color: #38d9c5;
-    margin-bottom: 10px;
-}
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #111c2e;
+        }
 
-.card p {
-    color: #b8c4d6;
-}
+        @media (max-width: 600px) {
+            .home h2 {
+                font-size: 28px;
+            }
 
-.skills span {
-    display: inline-block;
-    background: #172a40;
-    padding: 10px 17px;
-    margin: 7px;
-    border-radius: 5px;
-    color: #38d9c5;
-}
-
-footer {
-    text-align: center;
-    padding: 25px;
-    background: #101a2b;
-    color: #b8c4d6;
-}
-
-a {
-    transition: 0.3s;
-}
-
-@media(max-width: 600px) {
-    header {
-        flex-direction: column;
-        gap: 12px;
-    }
-    nav a {
-        margin: 5px;
-    }
-    .hero h1 {
-        font-size: 34px;
-    }
-}
-</style>
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
 <header>
-    <div class="logo">KARUNA.</div>
+    <h1>Karuna Abraham</h1>
     <nav>
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
         <a href="#contact">Contact</a>
     </nav>
 </header>
 
-<section class="hero" id="home">
-    <p class="tag">WELCOME TO MY PORTFOLIO</p>
-    <h1>Hello, I'm <span>Karuna</span></h1>
-    <h3>Aspiring Cyber Security & Cloud Security Professional</h3>
-    <p>
-        BTech Cyber Security student passionate about
-        cybersecurity, cloud computing, networking
-        and technology. Learning today to build a
-        secure digital tomorrow.
-    </p>
-    <a href="#about" class="btn">Explore My Portfolio</a>
+<section class="home" id="home">
+    <h2>Hello, I'm Karuna</h2>
+    <p>Aspiring Cyber Security & Cloud Security Professional</p>
+    <p>BTech Cyber Security Student</p>
 </section>
 
-<section class="about" id="about">
+<section id="about">
     <h2>About Me</h2>
-    <p>
-        I am a BTech Cyber Security student interested
-        in protecting digital systems and exploring
-        cloud security technologies.
-        I am currently building my knowledge in
-        networking, Linux, Python and cloud computing.
-        My goal is to become a skilled Cloud Security
-        professional and build an international career.
-    </p>
+    <div class="card">
+        <p>
+            I am a BTech Cyber Security student interested in
+            Cyber Security, Cloud Security and Networking.
+            I am currently developing my skills in Linux,
+            Python, AWS and Network Security.
+            My goal is to build a career in Cloud Security.
+        </p>
+    </div>
 </section>
 
 <section id="skills">
-    <h2>Technical Skills</h2>
+    <h2>My Skills</h2>
     <div class="skills">
         <span>Cyber Security</span>
-        <span>Computer Networking</span>
-        <span>Python</span>
+        <span>Networking</span>
+        <span>Python - Learning</span>
         <span>Linux</span>
-        <span>Cloud Computing</span>
         <span>AWS - Learning</span>
         <span>Wireshark</span>
         <span>Nmap</span>
@@ -209,57 +160,68 @@ a {
 
 <section id="projects">
     <h2>My Projects</h2>
-    <div class="cards">
 
-        <div class="card">
-            <h3>Fire Detection System</h3>
-            <p>
-                STM32-based fire detection and alert
-                system using smoke, flame and temperature
-                sensors with OLED display.
-            </p>
-        </div>
+    <div class="card">
+        <h3>STM32-Based Fire Detection System</h3>
+        <p>
+            A mini project using STM32, smoke sensor,
+            flame sensor, temperature sensor and OLED display
+            to detect fire-related conditions and generate alerts.
+        </p>
+    </div>
 
-        <div class="card">
-            <h3>Network Security Analysis</h3>
-            <p>
-                Learning network traffic analysis and
-                security monitoring using Wireshark
-                and Nmap.
-            </p>
-        </div>
+    <div class="card">
+        <h3>Network Security Analysis</h3>
+        <p>
+            Learning network traffic analysis and network
+            scanning using Wireshark and Nmap.
+        </p>
+    </div>
 
-        <div class="card">
-            <h3>Cloud Security</h3>
-            <p>
-                Exploring cloud security concepts,
-                AWS services, identity management
-                and access control.
-            </p>
-        </div>
-
+    <div class="card">
+        <h3>Cloud Security Learning</h3>
+        <p>
+            Currently learning AWS fundamentals,
+            IAM and cloud access control concepts.
+        </p>
     </div>
 </section>
 
 <section id="education">
     <h2>Education</h2>
     <div class="card">
-        <h3>BTech - Cyber Security</h3>
-        <p>Currently pursuing undergraduate studies.</p>
+        <h3>BTech in Cyber Security</h3>
+        <p>Undergraduate Student</p>
     </div>
 </section>
 
 <section id="contact">
     <h2>Contact Me</h2>
-    <p>Email: Add your professional email here</p>
-    <p>GitHub: github.com/karunaeabraham-beep</p>
-    <p>LinkedIn: Add your LinkedIn profile link here</p>
+    <div class="card">
+        <p>Email:
+            <a href="mailto:karunaeabraham@gmail.com">
+                karunaeabraham@gmail.com
+            </a>
+        </p>
+
+        <p>GitHub:
+            <a href="https://github.com/karunaeabraham-beep" target="_blank">
+                View My GitHub
+            </a>
+        </p>
+
+        <p>LinkedIn:
+            <a href="https://www.linkedin.com/in/karuna-abraham-654a3a336"
+               target="_blank">
+                View My LinkedIn Profile
+            </a>
+        </p>
+    </div>
 </section>
 
 <footer>
-    <p>© 2026 Karuna | Cyber Security Portfolio</p>
+    <p>© 2026 Karuna Abraham | Cyber Security Portfolio</p>
 </footer>
 
 </body>
 </html>
-
